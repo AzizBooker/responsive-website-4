@@ -1,45 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/app/scss/style.css">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/app/scss/style.css">
+
   <title>Frontend Mentor | Easybank landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <header class='header'>
 
     <a href="/" class='header__logo'>
       <nav class="flex flex-jc-sb flex-ai-c">
-    <img src="/images/logo.svg" alt="Easybank">
+        <img src="/images/logo.svg" alt="Easybank">
     </a>
-     <a href="#" class='header__menu'>
-       <span></span>
-       <span></span>
-       <span></span>
-     </a>
-  </nav>
-  </header>
-<!-- 
-  Home
-  About
-  Contact
-  Blog
-  Careers
+    <a href="#" class='header__menu hide-for-desktop'>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
 
-  Request Invite
+    <div class="header__links hide-for-mobile">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div>
+
+    <a href="#" class='button header__cta hide-for-mobile'> Request Invite</a>
+
+    </nav>
+  </header>
+  <!-- 
+
+ 
+  
+  
+
+
 
 
 
@@ -117,4 +136,5 @@
   -->
 </body>
 <script src="/app/js/script.js"></script>
+
 </html>
