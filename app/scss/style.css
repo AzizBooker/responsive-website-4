@@ -1,3 +1,7 @@
+.has-fade {
+  visibility: hidden;
+}
+
 @-webkit-keyframes fade-in {
   from {
     visibility: hidden;
@@ -27,8 +31,8 @@
 }
 
 .fade-in {
-  -webkit-animation: fade-in 300ms ease-in-out forwards;
-          animation: fade-in 300ms ease-in-out forwards;
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
 }
 
 @-webkit-keyframes fade-out {
@@ -62,8 +66,8 @@
 }
 
 .fade-out {
-  -webkit-animation: fade-out 300ms ease-in-out forwards;
-          animation: fade-out 300ms ease-in-out forwards;
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
 }
 
 html {
@@ -85,6 +89,10 @@ body {
   font-size: 1.125rem;
   color: #9698a6;
   font-weight: 300;
+}
+
+body.noscroll {
+  overflow: hidden;
 }
 
 a, a:visited, a:hover {
@@ -126,6 +134,11 @@ button, .button {
   font-weight: 400;
 }
 
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 @media (max-width: 63.9375em) {
   .hide-for-mobile {
     display: none;
@@ -142,22 +155,21 @@ button, .button {
   display: block;
 }
 
-.header.open .header__menu > span:first-child {
+.header.open .header__toggle > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.header.open .header__menu > span:nth-child(2) {
+.header.open .header__toggle > span:nth-child(2) {
   opacity: 0;
 }
 
-.header.open .header__menu > span:last-child {
+.header.open .header__toggle > span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
 .header .overlay {
-  visibility: hidden;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background-image: linear-gradient(#2d314d, transparent);
   position: fixed;
@@ -168,7 +180,8 @@ button, .button {
 }
 
 .header nav {
-  padding: 1.0625rem 1.5rem;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
 }
 
 .header __logo img {
@@ -176,7 +189,7 @@ button, .button {
   height: 1.375rem;
 }
 
-.header__menu > span {
+.header__toggle > span {
   display: block;
   width: 26px;
   height: 3px;
@@ -187,8 +200,27 @@ button, .button {
           transform-origin: 2.5px 1px;
 }
 
-.header__menu > span:not(:last-child) {
+.header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.header__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  margin-top: 1.5rem;
+  padding: 1.625rem;
+  border-radius: 5px;
+}
+
+.header__menu a {
+  display: block;
+  padding: .625rem;
+  color: #2d314d;
+  text-align: center;
 }
 
 .header__links a {
