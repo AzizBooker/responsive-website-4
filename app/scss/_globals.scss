@@ -17,6 +17,7 @@ body {
   color: $grayishBlue;
   font-weight: 300;
   min-height: 250vh;
+  overflow-x: hidden;
 
   @include breakpoint-up(large) {
     font-size: $font-med;

@@ -39,3 +39,8 @@ we can instead use *css helper classes like
 ## What i learned from lesson 3
 
 1. the ::before and ::after pseudo elements can be used to add and postion images.
+
+
+## what i learned from lesson 4 
+
+1. i learned you can use flex box to create a reponsive layout and use media query
