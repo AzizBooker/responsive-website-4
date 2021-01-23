@@ -79,25 +79,7 @@ min-height: 17.5rem;
 
         }
 
-h1{
-    font-weight: 300;
-    font-size: 1.875rem;
-    line-height: 1.15;
-    padding-bottom: 1.5rem;
-    color:$darkBlue;
-    @include breakpoint-up(large){
-        font-size: $font-xlg;
-        
-    }
-}
-p{
-    line-height: 1.5;
-    margin-bottom: 2.25rem;
-    @include breakpoint-up(large){
-        
-        
-    }
-}
+
     }
 
 }
