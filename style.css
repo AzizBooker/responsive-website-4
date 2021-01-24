@@ -424,7 +424,7 @@ button:hover,
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url("images/bg-intro-desktop.svg");
+  background-image: url("../images/bg-intro-desktop.svg");
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -444,7 +444,7 @@ button:hover,
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url("images/image-mockups.png");
+  background-image: url("../images/image-mockups.png");
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -638,7 +638,8 @@ button:hover,
     -ms-grid-columns: (1fr)[3] 2fr;
         grid-template-columns: repeat(3, 1fr) 2fr;
     grid-template: repeat(2, 1fr);
-        grid-template-areas: " logo links1 links2 cta" "social links1 links2 cta";
+        grid-template-areas: " logo links1 links2 cta"
+ "social links1 links2 cta";
   }
 }
 
